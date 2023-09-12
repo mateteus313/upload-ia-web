@@ -18,7 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+    // Redireciona direto para a pasta src, evitando tomar longos caminhos até a pasta raiz
+
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
